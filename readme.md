@@ -14,18 +14,18 @@ Here you are given an HTML, JSON, javascript and css file that pull data from th
 
 Please complete the following tasks:
 
-<!-- 1. In addition to its title and tagline, each product has an attribute named "description". We'd like to update the UI so that whenever you mouseover a product, an overlay comes across it with the description. 
-2. Convert the page to use Bootstrap to make it responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read)  
-3. Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page.  
-4. Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display.   -->
+1. In addition to its title and tagline, each product has an attribute named "description". We'd like to update the UI so that whenever you mouseover a product, an overlay comes across it with the description.(v) 
+2. Convert the page to use Bootstrap to make it responsive, so when it's viewed on a mobile device there's no left-right scrolling and it still looks ok visually (i.e. it's easy to read)  (v)
+3. Add an "X" in the top right corner of each product. When you click on it, have it remove itself from the page.  (v)
+4. Perform a few style edits: link colors should be #0096ff, The title of the page should be 36 pixels high. The tagline of the page should be 18. Title of each product should be 16 pixels high. The product tagline should be 16. Center everything on the page including titles and the products display.  (v)
 5. The way we load products is buggy and suboptimal.  Try refactoring it to work better and tell us why you did what you did.
 	5: I wasn't able to fix the buggy load but I was able identify from what section the suboptimal load was coming from. I've put comments wrapping the section. I think it maybe a little bottlenecked because of the async calls being made as the page loads each products title,tagline,photo, and description. I wasn't able to refactor as much but I've become a little obsessed and will come up with a solution to this.
 
 For bonus points, throw in some of these:
 
 1. It takes a second or two to load the page. Let the user know that the page is still loading until the page renders.(X)
-2. Use some kind of transition when removing a product from the page via the "X" <!-- (v) Images now fade out when being removed. -->
-3. Optimize and improve the code and layout where you see fit (and tell us how and why you did) <!-- (v)(NOTES HAVE BEEN ADDED WHERE CODE WAS ALTERED) -->
+2. Use some kind of transition when removing a product from the page via the "X"  (v) Images now fade out when being removed. 
+3. Optimize and improve the code and layout where you see fit (and tell us how and why you did)  (v)(NOTES HAVE BEEN ADDED WHERE CODE WAS ALTERED) 
 4. Give any thoughts or commentary on your solution.  What things would you optimize?  If you could use libraries, what libraries would you use?
 	4. I would've installed SASS so that writing css would've been more efficient because you'd write less lines overall and it would be easier to look at. As far as optimization goes I'd do things like compress images sizes(though KB's wouldn't make much difference but anything helps when loading a bunch of stuff at once) and see if there's a way to write the async calls in less lines. If I could've used libraries I would've React.js. I am not very fluent in it but I can tell that lines 54-58 of script.js resemble React components or could resemble them.
 
