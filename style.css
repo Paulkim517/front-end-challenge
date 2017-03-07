@@ -1,0 +1,153 @@
+/*
+-I changed the style of how the css looks like because it's much easier to read
+-I've also added comments describing what each groupings of css affects because
+it would be easier to read/add/delete when the code base increases in size.
+*/
+body{
+	font-family: "Arial";
+	text-align:center;
+}
+
+a{
+	text-decoration: none;
+	color:#0096ff;
+}
+.row{
+	margin: 0 auto;
+}
+
+.col1{
+
+}
+.col2{
+
+}
+.col3{
+
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+} 
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+/*main page styles*/
+.title{
+	font-size:36px;
+}
+.tagline{
+	font-size: 18px;
+}
+.description{
+	padding:10px;
+}
+
+/*product container styles*/
+.product-container{
+	margin:0 auto 10px; 
+	display:inline-block;
+	font-size: 16px;
+	position: relative;
+}
+
+.product-container img{
+	width:100%; 
+	height:auto;
+}
+
+/*overlay styles*/
+.desc_overlay{
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	background: #000;
+	height: 100%;
+	font-size: 12px;
+}
+.desc_overlay .overlay_copy{
+    width: 100%;
+    text-align: left;
+    margin: 0 2px 0;
+    position: relative;
+    top: 3px;
+    z-index: 9;
+    color: #fff;
+}
+.desc_overlay .overlay_copy p{
+  padding: 10px;
+  color: #fff;
+}
+.close_out{
+ 	font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    z-index: 9999;
+    width: 26px;
+    text-align: center;
+    display: none;
+    cursor:pointer;
+}
+
+/*loader styles*/
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#body{
+  display: none;
+}
+
+/*Responsive designs*/
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+	body{
+		display: none;
+	}
+}
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+
+
